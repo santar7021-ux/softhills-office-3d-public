@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>㈜소프트힐스 3D 자리 배치도 (공개용)</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>㈜소프트힐스 3D 자리 배치도 <span style="color:#9aa3af;font-weight:400;font-size:12px;">(공개용 · 이니셜 표기)</span></h1>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-office="seoul">서울 본사</button>
+      <button class="tab" data-office="busan">부산 지사</button>
+      <button class="tab" data-office="ulsan">울산 지사</button>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="viewport">
+      <div id="canvas-wrap"></div>
+      <div class="viewport-overlay">
+        <div id="office-address" class="office-address"></div>
+        <button id="reset-view" title="시점 초기화">시점 초기화</button>
+      </div>
+      <div id="tooltip" class="tooltip hidden"></div>
+    </section>
+
+    <aside class="roster-panel">
+      <div class="roster-header">
+        <h2 id="roster-title">인원 현황</h2>
+        <input id="roster-search" type="text" placeholder="검색" />
+      </div>
+      <div class="legend" id="legend"></div>
+      <ul class="roster-list" id="roster-list"></ul>
+    </aside>
+  </main>
+
+  <footer class="footnote">
+    공개 페이지는 개인정보 보호를 위해 이름을 이니셜(초성)로 표시합니다. 실명이 포함된 내부용 버전은 사내 공유 드라이브 및 비공개 저장소에서 관리됩니다.
+  </footer>
+
+  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="js/office_data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
