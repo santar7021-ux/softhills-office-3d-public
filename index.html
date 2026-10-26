@@ -4,16 +4,23 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>㈜소프트힐스 3D 자리 배치도 (공개용)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="topbar">
-    <h1>㈜소프트힐스 3D 자리 배치도 <span style="color:#9aa3af;font-weight:400;font-size:12px;">(공개용 · 이니셜 표기)</span></h1>
+    <div class="brand">
+      <span class="brand-eyebrow">SOFTHILLS · FACILITIES (PUBLIC)</span>
+      <h1>3D 자리 배치도 <span style="color:var(--ink-dim);font-weight:400;font-size:12px;">· 이니셜 표기</span></h1>
+    </div>
     <nav class="tabs" id="tabs">
       <button class="tab active" data-office="seoul">서울 본사</button>
       <button class="tab" data-office="busan">부산 지사</button>
       <button class="tab" data-office="ulsan">울산 지사</button>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">다크 모드</button>
   </header>
 
   <main class="layout">
@@ -37,7 +44,7 @@
   </main>
 
   <footer class="footnote">
-    공개 페이지는 개인정보 보호를 위해 이름을 이니셜(초성)로 표시합니다. 실명이 포함된 내부용 버전은 사내 공유 드라이브 및 비공개 저장소에서 관리됩니다.
+    공개 페이지는 개인정보 보호를 위해 이름을 이니셜(초성)로 표시하고, 실제 사진 대신 색상 아바타를 사용합니다. 실명·사진이 포함된 내부용 버전은 사내 공유 드라이브 및 비공개 저장소에서 관리됩니다.
   </footer>
 
   <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
